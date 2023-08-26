@@ -1,9 +1,8 @@
 # Robotic Rebar Detection Simulation in ROS2/RVIZ  
 
 
-![Image Alt Text](media/image13.gif)
+<img src="media/image13.gif" alt="Image Alt Text" width="800">
 
-![Image Alt Text](media/image12.png)
 
 
 ## Table of Contents
@@ -12,24 +11,37 @@
 - [Robot Model and Environment](#robot-model-and-environment)
 - [Control Package](#control-package)
 - [Simulation Results](#simulation-results)
-- - [Setting Up the Package](#setting-up-the-package)
-  - [Running the Package](#running-the-package)
+- [Setting Up the Package](#setting-up-the-package)
+- [Running the Package](#running-the-package)
 - [Conclusion](#conclusion)
+- [Contributing](#Contributing)
+- [Contact](#Contact)
 
 
 ## Introduction
 This repository presents a simulation of a robotic process for on-site assessment and non-destructive testing of existing concrete elements in a construction scenario. The simulation aims to automate the assessment process to enhance effectiveness and obtain high-quality structural information.
 
 ## System Overview
+
+<img src="media/Aspose.Words.bcf8a42e-5ea9-4182-b583-51c8e248c08f.015.jpeg" alt="Image Alt Text" width="500">
+
+
 The simulation is based on the Robot Operating System (ROS), enabling communication and integration between the robot and building elements. The robotic process involves detecting rebar in reinforced concrete walls. The simulation generates data that can be used for accurate structural assessment and even for integration with Building Information Modeling (BIM).
 
 ## Robot Model and Environment
+
+<img src="media/Aspose.Words.bcf8a42e-5ea9-4182-b583-51c8e248c08f.012.png" alt="Image Alt Text" width="500">
+
+
 The robot used in the simulation is a Kuka robot arm with six links and five joints. The environment consists of walls with various configurations. The robot arm can move around the environment to scan and assess the structural properties of the walls.
 
 ## Control Package
 The control package comprises several nodes and scripts that work together to ensure the robot's movement and data processing. Notably, the `jointstate_joystick.py` node translates joystick commands into joint movements for the robot. Custom nodes like `wall.py`, `bar.py`, and `environment.py` create elements in the environment and represent rebar inside the walls. The `Launch.py` script manages the life cycle of the package.
 
 ## Simulation Results
+
+<img src="media/image14.png" alt="Image Alt Text" width="700">
+
 The simulation generates realistic scenarios where the robot detects rebar in walls. The `Distance_Calculator.py` code simulates rebar detection using ROS Client Library and Transform Library. Detected rebar information is stored in a CSV file for analysis.
 
 ## Requirements
@@ -90,10 +102,23 @@ Follow these steps to run the package:
 ## Conclusion
 This simulation demonstrates an automated robotic assessment process for on-site non-destructive testing. It has the potential to improve efficiency, accuracy, and worker safety in construction scenarios. Further work includes integrating physical devices like electromagnetic metal detectors and enhancing integration with external measurement systems.
 
-![Robotic Rebar Detection](Aspose.Words.bcf8a42e-5ea9-4182-b583-51c8e248c08f.017.png)
-*Figure 11: The robot scanning detecting rebars inside the wall.*
-
-![Detected Rebars Graph](Aspose.Words.bcf8a42e-5ea9-4182-b583-51c8e248c08f.018.png)
-*Figure 14: Detected rebars graph exported to CSV file*
+![Robotic Rebar Detection](media/Aspose.Words.bcf8a42e-5ea9-4182-b583-51c8e248c08f.009.png)
 
 
+![Detected Rebars Graph](media/Aspose.Words.bcf8a42e-5ea9-4182-b583-51c8e248c08f.008.png)
+
+
+## Contributing
+
+   Contributions to this project are welcome! If you'd like to contribute, please follow these guidelines:
+   - Fork the repository and create a new branch for your feature/fix.
+   - Ensure your code follows the project's coding style and conventions.
+   - Create clear and concise commit messages.
+   - Submit a pull request describing your changes and explaining their purpose.
+
+
+## Contact
+
+    If you have any questions or feedback, feel free to contact the authors:
+
+     Aldohami Omar: omar.aldohami@rwth-aachen.de
